@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script 
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+            crossorigin="anonymous">
+        </script>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+            crossorigin="anonymous">
+        </script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+            crossorigin="anonymous">
+        </script>
+        <style>
+            body{
+                font-family: arial;
+                background-image: url(gif/Animations_with_HTML5_2000x1100_v2.gif);
+                background-repeat: no-repeat;
+                background-size: 1500px;
+            }
+            h1{
+                font-size: 40px;
+                color: rgb(0, 0, 0);
+                font-family: bold;
+            }
+            a:hover{
+                color: rgb(255, 0, 0);
+                text-decoration: underline;
+            }
+            h2{
+                font-size: 16px;
+            }
+            p{
+                font-size: 20px;
+                color: rgb(255, 247, 0);
+            }
+            a:link{
+                color: rgb(0, 0, 0);
+            }
+            .header{
+                background-image: url(Images/back.jpg);
+            }
+            .header h1{
+                color: rgb(255, 0, 191);
+            }
+            #set{
+                margin-left: 77%;
+            }
+            .popup {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                margin-left: 36%;
+            }
+            .popup .popuptext {
+                visibility: hidden;
+                width: 500px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 8px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                left: -30%;
+                margin-left: -30%;
+            }
+            .popup .popuptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+            .popup .show {
+                visibility: visible;
+                -webkit-animation: fadeIn 1s;
+                animation: fadeIn 1s;
+            }
+            @-webkit-keyframes fadeIn {
+                from {opacity: 0;} 
+                to {opacity: 1;}
+            }
+            @keyframes fadeIn {
+                from {opacity: 0;}
+                to {opacity:1 ;}
+            }
+
+        </style>
+        <script> 
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            </script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="Welcome.html">Welcome</a>
+                  <button class="navbar-toggler" type="button" id="set" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                    <span class="navbar-toggle-icon"></span>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Welcome.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com">Google Search</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <article>
+            <h1 class="text-center">You can do the following:</h1>
+            <p style="margin-left: 36%;">View my <a href="Resume11.html">Resume</a></p>
+            <p style="margin-left: 36%;"><a href="Contact.html">Contact me</a></p>
+            <div class="popup" onclick="myFunction()">Click here for faster contact details.
+                <span class="popuptext" id="myPopup">Cell number: +27 60 862 8516<br>Email Address:example@gmail.com</span>
+            </div>
+            <br>
+            <br>
+            <button style="margin-left: 36%;" type="button" class="btn btn-primary">Download my Resume</button>
+        </article>
+    </body>
+</html>
